@@ -40,13 +40,13 @@ html {
 }
 #back2Top:hover {
     background-color: #337AB7;
-    color: #FFF;
+    color: #EFDECD;
 }
 .welcome-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: #EFDECD;
 }
 .about-section {
     height: 150%;
@@ -58,7 +58,7 @@ html {
     height: 180%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: #EFDECD;
 }
 .contact-section {
     height: 100%;
