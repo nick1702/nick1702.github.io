@@ -66,6 +66,12 @@ html {
     text-align: center;
     background: #EFDECD;
 }
+.spotlight-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #EFDECD;
+}
 .navbar-default .navbar-nav > li > a:hover {
 	color: #333;
 	background-color: #F0F0F0;
