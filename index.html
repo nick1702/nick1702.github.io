@@ -120,7 +120,7 @@
 				<p>Figure it out</p>
 			<h2>Edgar: Headphones but no Headphones Pledge or Lucas Murphy Pledge</h2>
 				<p>Figure it out</p>
-			                    
+
                 </div>
             </div>
         </div>
@@ -138,9 +138,9 @@
             </div>
         </div>
     </section>
-	
+
 	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
-	
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -150,6 +150,184 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/sticky-menu.js"></script>
+
+
+
+
+
+
+
+
+
+    <div class="form-container">
+
+        <div class="title">Upload Files</div>
+
+        <form accept-charset="UTF-8" action="http://ec2-3-14-86-171.us.east-2.compute.amazonaws.com:51515/send-email" method="POST" target="_blank" enctype="multipart/form-data" onsubmit="window.location.href = 'https://www.hiddenworld.co/thank-you'; return false;">
+
+
+
+            <div class='form-field'><label class='form-label'>Name</label>
+
+                <div class="form-input-container">
+
+                    <input class="form-input" type="text" name="last_name" placeholder="John">
+
+                </div>
+
+            </div>
+
+            <div class='form-field'><label class='form-label'>Email</label>
+
+                <div class="form-input-container">
+
+                    <input class="form-input" type="email" name="email" placeholder="john@doe.com">
+
+                </div>
+
+            </div>
+
+            <div class='form-field'><label class='form-label'>Select Files</label>
+
+                <div class="form-input-container">
+
+                    <input class="form-input" type="file" name="file[]" placeholder="Upload your resume" multiple >
+
+                </div>
+
+            </div>
+
+            <button class="form-button" type="submit">SUBMIT</button>
+
+        </form>
+
+    </div>
+
+
+
+    <style>
+
+        .form-container {
+
+            border-radius: 5px;
+
+            background-color: #f2f2f2;
+
+            padding: 20px;
+
+            width: 95%;
+
+        }
+
+
+
+        .title {
+
+            font-family: "Celias", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+            text-align: center;
+
+            text-transform: uppercase;
+
+            font-size: 2em;
+
+            font-weight: bold;
+
+            letter-spacing: .05em;
+
+            padding-bottom: 1em;
+
+        }
+
+
+
+        .form-label {
+
+            font-family: "Celias", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+            font-size: 15px;
+
+            line-height: 1.42857143;
+
+            color: #2c3e50;
+
+            box-sizing: border-box;
+
+            display: inline-block;
+
+            max-width: 100%;
+
+            margin-top: 5px;
+
+            margin-bottom: 5px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .form-input {
+
+            box-sizing: border-box;
+
+            font: inherit;
+
+            font-family: "Celias", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+            width: 100%;
+
+            height: 45px;
+
+            padding: 10px 15px;
+
+            font-size: 15px;
+
+            color: #2c3e50;
+
+            background-color: #ffffff;
+
+            border: 1px solid #dce4ec;
+
+            border-radius: 4px;
+
+            border-width: 2px;
+
+        }
+
+
+
+        .form-button {
+
+            border: none;
+
+            font-size: 16px;
+
+            margin-top: 15px;
+
+            font-weight: 800;
+
+            line-height: 1.5;
+
+            border-radius: 3px;
+
+            padding: 16px;
+
+            background-color: #ccc;
+
+            width: 100%;
+
+            text-align: center;
+
+            cursor: pointer;
+
+            -webkit-transition: all .15s ease;
+
+            transition: all .15s ease;
+
+        }
+
+    </style>
 
 </body>
 
