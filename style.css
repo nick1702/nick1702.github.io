@@ -1,127 +1,230 @@
-
-/* Updated styles for a more fun and engaging look with new color scheme */
-
-body {
-    font-family: 'Comic Sans MS', sans-serif;
-    background-color: #f4eee8;
-    color: #333;
-    line-height: 1.6;
+/* Reset some default spacing */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-box-sizing: border-box;
 }
 
-header {
-    background-color: #8b5e3c;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #75b2dd;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #ffffff;
+a {
     text-decoration: none;
-    padding: 0 15px;
+    color: inherit;
 }
 
-nav a:hover {
-    color: #f1f8e9;
-}
-
-main {
-    padding: 20px;
-    background: #fffaf0;
-}
-
-footer {
-    background-color: #8b5e3c;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 10px 0;
-    font-weight: bold;
-    color: #75b2dd;
-    padding-left: 20px
-}
-
-p {
-    margin: 0 0 10px 0;
-    padding-left: 20px
-}
-
-button {
-    background-color: #75b2dd;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 16px;
+    transition: background 0.3s ease;
 }
 
-button:hover {
-    background-color: #92c6dd;
+.button:hover {
+    background: #0056b3;
 }
 
-@media (max-width: 600px) {
-    nav {
+/* Hero Section */
+/* Using image1.jpg for the background image; ensure it's centered vertically */
+.hero {
+    background: url('./images/image1.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: -50px auto 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+/* Section Styling */
+section {
+    margin: 40px 0;
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.event-details p,
+.donate p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+/* Calendar, Donate, and Contact Sections */
+.calendar, .donate, .contact {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery a {
+    display: block;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal (Lightbox) Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+
+/* Contact Section - Refined */
+.contact {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-item {
+    flex: 1 1 300px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .gallery img {
+        width: 45%;
+        height: auto;
+    }
+    .contact-info {
         flex-direction: column;
+        align-items: center;
     }
 }
 
-/* Style for the big divider line */
-.big-divider {
-    border: 0; /* Remove default border */
-    height: 5px; /* Thickness of the divider */
-    background-color: #000; /* Color of the divider */
-    margin: 40px 0; /* Space above and below the divider */
-}
-
-.points-section {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line if the container width is exceeded */
-    gap: 20px; /* Optional: Adds some space between the iframe elements */
-}
-
-.video-container {
-    flex: 1; /* This makes each video container flexible in size */
-    min-width: 320px; /* Minimum width of each video container */
-}
-
-.flex-break {
-    flex-basis: 100%;
-    height: 0; /* You can adjust or omit this if you don't need spacing */
-}
-
-/* Style for the navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: #8b5e3c; /* Dark background */
-    padding: 10px 0; /* Some padding */
-}
-
-/* Style for the buttons */
-.navbar a {
-    float: left;
-    display: block;
-    color: white; /* White text color */
-    text-align: center;
-    padding: 14px 20px; /* Padding inside the buttons */
-    text-decoration: none; /* No underline for the links */
-    font-size: 17px; /* Font size */
-}
-
-/* Change background color of buttons on hover */
-.navbar a:hover {
-    background-color: #ddd; /* Light grey background on hover */
-    color: black; /* Black text color on hover */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
 }
