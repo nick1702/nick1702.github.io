@@ -1,153 +1,103 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-417TPCQ7T6"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-417TPCQ7T6');
-</script>
-
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4x4x48 Charity Run for Doctors Without Borders</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 960px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            text-align: center;
-            color: #333;
-        }
-        p {
-            color: #555;
-            line-height: 1.6;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 5px;
-            background: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background: #0056b3;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .gallery img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-        .interested-section {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .counter {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .contact {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-        }
-        .contact ul {
-            list-style: none;
-            padding: 0;
-        }
-        .contact li {
-            margin: 5px 0;
-        }
-    </style>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-417TPCQ7T6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-417TPCQ7T6');
+    </script>
 </head>
 <body>
-<div class="container">
-    <h1>4x4x48 Charity Run</h1>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Join the 4x4x48 Challenge</h1>
+        <p>Run, support, and make a difference for Doctors Without Borders. Participate in a leg or two and be part of something extraordinary!</p>
+        <a href="#event-details" id="heroLearnMoreButton" class="button">Learn More</a>
+    </div>
+</section>
 
+<!-- Main Content Container -->
+<div class="container">
     <!-- Event Details Section -->
-    <section class="event-details">
+    <section id="event-details" class="event-details">
         <h2>Event Details</h2>
-        <p>Join us for the annual <strong>4x4x48 Challenge</strong>—an endurance run where participants complete 4 miles every 4 hours over a 48‑hour period. This year, the event begins at <strong>6 PM on February 28</strong> and the final leg takes place at <strong>2 PM on Sunday</strong>.</p>
-        <p>Each leg of the run will start and finish in front of Mackal Gym, following the scenic bike path. We welcome runners of all levels to help raise funds for a truly worthy cause.</p>
+        <p>Experience the thrill of our annual <strong>4x4x48 Challenge</strong> – a 48‑hour endurance run where participants complete 4 miles every 4 hours. This year, the event kicks off at <strong>6 PM on February 28</strong> and concludes with the final leg at <strong>2 PM on Sunday</strong>.</p>
+        <p>All legs start and finish in front of Mackal Gym, following a scenic bike path. Whether you're an avid runner or simply looking to support a worthy cause, there's a place for you in this event!</p>
     </section>
 
     <!-- Calendar Invite Section -->
     <section class="calendar">
         <h2>Calendar Invite</h2>
-        <p>Add the event to your Google Calendar by clicking the button below:</p>
-        <div style="text-align: center;">
-            <a href="https://calendar.google.com/calendar/u/0?cid=Y19kZWY1NzIxZTUwMGExMTM3NzhmYTRmNzEzZWMwZTEzMDYwNmU1OWNjZWMyNTU0YTFlNzQ4NjQ5ODAyNjlkNzBlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank" class="button">Add to Google Calendar</a>
-        </div>
+        <p>Add the event to your Google Calendar to stay up to date with every leg!</p>
+        <a href="https://calendar.google.com/calendar/u/0?cid=Y19kZWY1NzIxZTUwMGExMTM3NzhmYTRmNzEzZWMwZTEzMDYwNmU1OWNjZWMyNTU0YTFlNzQ4NjQ5ODAyNjlkNzBlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
+           target="_blank" id="calendarInviteButton" class="button">Add to Calendar</a>
     </section>
 
     <!-- Doctors Without Borders Section -->
     <section class="donate">
         <h2>About Doctors Without Borders</h2>
-        <p><strong>Doctors Without Borders</strong> (Médecins Sans Frontières) is an international humanitarian organization dedicated to providing medical care where it’s needed most—especially in areas affected by conflict, disasters, or epidemics. Their work saves lives and alleviates suffering around the globe.</p>
-        <p>If you’d like to support their efforts, please consider donating:</p>
-        <div style="text-align: center;">
-            <a href="YOUR_DONATION_PAGE_LINK_HERE" target="_blank" class="button">Donate to Doctors Without Borders</a>
-        </div>
+        <p><strong>Doctors Without Borders</strong> (Médecins Sans Frontières) is an international humanitarian organization dedicated to providing medical care where it’s needed most – especially in areas affected by conflict, disasters, or epidemics. Their tireless work saves lives and alleviates suffering worldwide.</p>
+        <p>Support their mission by participating in the challenge and/or donating to this incredible cause.</p>
+        <a href="YOUR_DONATION_PAGE_LINK_HERE" target="_blank" id="donateButton" class="button">Donate Now</a>
     </section>
 
     <!-- Photos Section -->
     <section class="photos">
         <h2>Photos from Last Year's Runs</h2>
         <div class="gallery">
-            <!-- Replace 'image1.jpg', 'image2.jpg', etc., with your actual image paths in the ./images folder -->
-            <img src="./images/image1.jpg" alt="Photo from last year's run">
-            <img src="./images/image2.jpg" alt="Photo from last year's run">
-            <img src="./images/image3.jpg" alt="Photo from last year's run">
-        </div>
-    </section>
-
-    <!-- Interested Button Section -->
-    <section class="interested-section">
-        <button id="imInterestedBtn" class="button">I'm Interested</button>
-        <div class="counter">
-            Interested Count: <span id="interestedCount">0</span>
+            <a href="./images/image1.jpg" class="gallery-item">
+                <img src="./images/image1.jpg" alt="Photo from last year's run">
+            </a>
+            <a href="./images/image2.jpg" class="gallery-item">
+                <img src="./images/image2.jpg" alt="Photo from last year's run">
+            </a>
+            <a href="./images/image3.jpg" class="gallery-item">
+                <img src="./images/image3.jpg" alt="Photo from last year's run">
+            </a>
         </div>
     </section>
 
     <!-- Contact Information Section -->
     <section class="contact">
         <h2>Contact Information</h2>
-        <p>If you have any questions about the event, please feel free to reach out:</p>
-        <ul>
-            <li>Nick Powers –> nicholaspowers1702@gmail.com - instagram: @nick_1702</li>
-            <li>Jonah Steinweh-Adler –> jonah-sa@uri.edu - instagram: @jonahsteiny</li>
-        </ul>
+        <p>If you have questions about the event, please reach out to us:</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>Nick Powers</strong>
+                <p>Email: <a href="mailto:nicholaspowers1702@gmail.com">nicholaspowers1702@gmail.com</a></p>
+                <p>Instagram: <a href="https://instagram.com/nick_1702" target="_blank">@nick_1702</a></p>
+            </div>
+            <div class="contact-item">
+                <strong>Jonah Steinweh-Adler</strong>
+                <p>Email: <a href="mailto:jonah-sa@uri.edu">jonah-sa@uri.edu</a></p>
+                <p>Instagram: <a href="https://instagram.com/jonahsteiny" target="_blank">@jonahsteiny</a></p>
+            </div>
+        </div>
     </section>
 </div>
 
-<!-- Link to external JavaScript file -->
+<!-- Modal for Image Lightbox -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<!-- External JavaScript -->
 <script src="main.js"></script>
 </body>
 </html>
