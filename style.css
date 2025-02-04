@@ -1,0 +1,127 @@
+
+/* Updated styles for a more fun and engaging look with new color scheme */
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f4eee8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+header {
+    background-color: #8b5e3c;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #75b2dd;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav a:hover {
+    color: #f1f8e9;
+}
+
+main {
+    padding: 20px;
+    background: #fffaf0;
+}
+
+footer {
+    background-color: #8b5e3c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #75b2dd;
+    padding-left: 20px
+}
+
+p {
+    margin: 0 0 10px 0;
+    padding-left: 20px
+}
+
+button {
+    background-color: #75b2dd;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #92c6dd;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* Style for the big divider line */
+.big-divider {
+    border: 0; /* Remove default border */
+    height: 5px; /* Thickness of the divider */
+    background-color: #000; /* Color of the divider */
+    margin: 40px 0; /* Space above and below the divider */
+}
+
+.points-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if the container width is exceeded */
+    gap: 20px; /* Optional: Adds some space between the iframe elements */
+}
+
+.video-container {
+    flex: 1; /* This makes each video container flexible in size */
+    min-width: 320px; /* Minimum width of each video container */
+}
+
+.flex-break {
+    flex-basis: 100%;
+    height: 0; /* You can adjust or omit this if you don't need spacing */
+}
+
+/* Style for the navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #8b5e3c; /* Dark background */
+    padding: 10px 0; /* Some padding */
+}
+
+/* Style for the buttons */
+.navbar a {
+    float: left;
+    display: block;
+    color: white; /* White text color */
+    text-align: center;
+    padding: 14px 20px; /* Padding inside the buttons */
+    text-decoration: none; /* No underline for the links */
+    font-size: 17px; /* Font size */
+}
+
+/* Change background color of buttons on hover */
+.navbar a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    color: black; /* Black text color on hover */
+}
