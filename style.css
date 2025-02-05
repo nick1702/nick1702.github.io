@@ -34,7 +34,6 @@ a {
 }
 
 /* Hero Section */
-/* Using image1.jpg for the background image; ensure it's centered vertically */
 .hero {
     background: url('./images/image1.jpg') no-repeat center center/cover;
     height: 80vh;
@@ -105,11 +104,47 @@ section h2 {
 }
 
 /* Calendar, Donate, and Contact Sections */
-.calendar, .donate, .contact {
+.calendar, .donate, .contact, .signup {
     background: #f9f9f9;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
+}
+
+/* Sign-Up Form Styles */
+.signup form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.signup input[type="text"],
+.signup input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup button {
+    padding: 10px 20px;
+    border: none;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup button:hover {
+    background: #0056b3;
+}
+
+#signupStatus {
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 /* Gallery Styles */
@@ -174,13 +209,6 @@ section h2 {
 }
 
 /* Contact Section - Refined */
-.contact {
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-}
-
 .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -228,3 +256,22 @@ section h2 {
         height: auto;
     }
 }
+
+/* Spinner Styles */
+#loadingSpinner {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #007BFF; /* Blue */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* (The rest of your style.css remains unchanged) */
