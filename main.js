@@ -58,4 +58,31 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = 'none';
         }
     });
+
+    // Sign-up form submission handling with loading spinner
+    const signupForm = document.getElementById('signupForm');
+    const signupStatus = document.getElementById('signupStatus');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+    if (signupForm) {
+        signupForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            signupStatus.innerHTML = "";
+            loadingSpinner.style.display = 'inline-block';  // Show spinner
+            const formData = new FormData(signupForm);
+
+            // Replace with your deployed Google Apps Script Web App URL.
+            fetch("https://script.google.com/macros/s/AKfycbz-eUTeuMX7PFtZy3kZaT_JgqreUp9FbfrDdK4MGXhmYtTiyMY55pDmB2BO0zgrQsny/exec", {
+                method: "POST",
+                mode: "no-cors",
+                body: formData
+            }).then(function() {
+                loadingSpinner.style.display = 'none';  // Hide spinner when done
+                signupStatus.innerHTML = "Thank you for signing up! More info will be sent soon.";
+                signupForm.reset();
+            }).catch(function(error) {
+                loadingSpinner.style.display = 'none';  // Hide spinner on error
+                signupStatus.innerHTML = "There was an error. Please try again.";
+            });
+        });
+    }
 });

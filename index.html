@@ -40,6 +40,20 @@
         <p>All legs start and finish in front of Mackal Gym, following a scenic bike path. Whether you're an avid runner or simply looking to support a worthy cause, there's a place for you in this event!</p>
     </section>
 
+    <!-- Sign-Up Form Section (Moved Up) -->
+    <section class="signup">
+        <h2>Sign Up for Race Updates</h2>
+        <p>Join our email list to receive updates about the race!</p>
+        <form id="signupForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit" class="button">Sign Up</button>
+        </form>
+        <!-- Loading spinner; hidden by default -->
+        <div id="loadingSpinner" style="display: none;"></div>
+        <div id="signupStatus"></div>
+    </section>
+
     <!-- Calendar Invite Section -->
     <section class="calendar">
         <h2>Calendar Invite</h2>
