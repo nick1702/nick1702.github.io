@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Track clicks on the hero "Learn More" button
     const heroButton = document.getElementById('heroLearnMoreButton');
@@ -71,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(signupForm);
 
             // Replace with your deployed Google Apps Script Web App URL.
-            fetch("https://script.google.com/macros/s/AKfycbz-eUTeuMX7PFtZy3kZaT_JgqreUp9FbfrDdK4MGXhmYtTiyMY55pDmB2BO0zgrQsny/exec", {
+            fetch("https://script.google.com/macros/s/AKfycbx5xBUg0pNoYYudubLubTZgS7z-pYQhpLgSUIy5HprK59eClauTUg6WBhM_0voZMDe6/exec", {
                 method: "POST",
                 mode: "no-cors",
                 body: formData
